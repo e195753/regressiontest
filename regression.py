@@ -4,8 +4,8 @@ class LinearRegression:
     theta = None
     y = None
 
-    def fit(self,x,y):
-        pass
+    def fit(self,input,output):
+        self.theta = np.dot(np.dot(np.linalg.inv(np.dot(input.T,input)),input.T),output)
 
     def predict(self,x):
         pass
